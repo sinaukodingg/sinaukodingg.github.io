@@ -59,7 +59,9 @@
     console.log("Angkatan: "+c);
     var d = document.getElementById("major").value;
     console.log("Jurusan: "+d);
-    document.write("<p>Data telah dimasukkan</p>");
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Data telah dimasukkan");
+    tag.appendChild(text);
   }
 </script>
 </body>
