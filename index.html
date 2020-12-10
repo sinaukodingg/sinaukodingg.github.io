@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>HTML Forms</h2>
-<form>
+<h2>Data Peserta SinauFE15</h2>
+<form onsubmit=myfunc()>
   <label for="name">Nama:</label><br>
   <input type="text" id="name" name="name"><br>
   <label for="uni">Asal Universitas:</label><br>
@@ -12,6 +12,18 @@
   <label for="major">Jurusan:</label><br>
   <input type="text" id="major" name="major"><br>
   <input type="submit" value="Submit">
-</form> 
+</form>
+<script>
+  function myfunc(){
+    var a = document.getElementById("name").value;
+    console.log("Nama: "+a);
+    var b = document.getElementById("uni").value;
+    console.log("Asal Universitas: "+b);
+    var c = document.getElementById("batch").value;
+    console.log("Angkatan: "+c);
+    var d = document.getElementById("major").value;
+    console.log("Jurusan: "+d);
+  }
+</script>
 </body>
 </html>
