@@ -50,6 +50,9 @@
 </form>
 </div>
 <script>
+  $("#prospects_form").submit(function(e) {
+    e.preventDefault();
+  });
   function myfunc(){
     var a = document.getElementById("name").value;
     console.log("Nama: "+a);
@@ -59,9 +62,7 @@
     console.log("Angkatan: "+c);
     var d = document.getElementById("major").value;
     console.log("Jurusan: "+d);
-    var tag = document.createElement("p");
-    var text = document.createTextNode("Data telah dimasukkan");
-    tag.appendChild(text);
+    alert("Data telah dimasukkan");
   }
 </script>
 </body>
